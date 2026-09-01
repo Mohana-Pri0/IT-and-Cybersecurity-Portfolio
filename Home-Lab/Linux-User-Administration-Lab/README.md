@@ -50,7 +50,7 @@ The lab focused on the complete user account lifecycle, including:
 whoami
 ```
 
-**Screenshot:** ![Verifyi.png
+**Screenshot:** ![Verify Current User](01-whoami.png)
 
 ---
 
@@ -75,7 +75,7 @@ sudo adduser testuser
 cat /etc/passwd | grep testuser
 ```
 
-**Screenshot:** 03-verify-user.png
+**Screenshot:** ![Verifyy-user.png
 
 ---
 
