@@ -50,7 +50,7 @@ The lab focused on the complete user account lifecycle, including:
 whoami
 ```
 
-**Screenshot:** Coming Soon
+**Screenshot:** ![Verify Current User](01-w
 
 ---
 
@@ -62,7 +62,8 @@ whoami
 sudo adduser testuser
 ```
 
-**Screenshot:** Coming Soon
+**Screenshot:** ![Create User](02-create-user.png)
+
 
 ---
 
@@ -74,7 +75,7 @@ sudo adduser testuser
 cat /etc/passwd | grep testuser
 ```
 
-**Screenshot:** Coming Soon
+**Screenshot:** 03-verify-user.png
 
 ---
 
@@ -92,7 +93,7 @@ sudo passwd -l testuser
 sudo passwd -S testuser
 ```
 
-**Screenshot:** Coming Soon
+**Screenshot:** ![Lock User Account](04-lock-user
 
 ---
 
@@ -110,7 +111,7 @@ sudo passwd -u testuser
 sudo passwd -S testuser
 ```
 
-**Screenshot:** Coming Soon
+**Screenshot:** ![Unlock User Account](05-unlock-user
 
 ---
 
@@ -128,7 +129,9 @@ sudo userdel testuser
 cat /etc/passwd | grep testuser
 ```
 
-**Screenshot:** Coming Soon
+**Screenshot:** 06-delete-user.png
+
+![Verify User Deletion](07-
 
 ---
 
