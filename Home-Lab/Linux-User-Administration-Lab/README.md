@@ -75,7 +75,7 @@ sudo adduser testuser
 cat /etc/passwd | grep testuser
 ```
 
-**Screenshot:** ![Verifyy-user.png
+**Screenshot:** ![Verifyy-user](03-verify-user.png)
 
 ---
 
@@ -93,7 +93,7 @@ sudo passwd -l testuser
 sudo passwd -S testuser
 ```
 
-**Screenshot:** ![Lock User Account](04-lock-user
+**Screenshot:** ![Lock User Account](04-lock-user.png)
 
 ---
 
@@ -111,7 +111,7 @@ sudo passwd -u testuser
 sudo passwd -S testuser
 ```
 
-**Screenshot:** ![Unlock User Account](05-unlock-user
+**Screenshot:** ![Unlock User Account](05-unlock-user.png)
 
 ---
 
@@ -129,9 +129,9 @@ sudo userdel testuser
 cat /etc/passwd | grep testuser
 ```
 
-**Screenshot:** 06-delete-user.png
+**Screenshot:** ![Verify User Deletion](06-delete-user.png)
 
-![Verify User Deletion](07-
+![Verify User Deletion](07-verify-deletion.png)
 
 ---
 
