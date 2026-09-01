@@ -50,7 +50,7 @@ The lab focused on the complete user account lifecycle, including:
 whoami
 ```
 
-**Screenshot:** 01-whoami.png
+**Screenshot:** Home-Lab/Linux-User-Administration-Lab/01-whoami.png
 
 ---
 
