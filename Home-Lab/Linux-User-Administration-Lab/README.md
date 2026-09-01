@@ -50,7 +50,7 @@ The lab focused on the complete user account lifecycle, including:
 whoami
 ```
 
-**Screenshot:** ![Verify Current User](01-w
+**Screenshot:** 01-whoami.png
 
 ---
 
