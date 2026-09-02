@@ -56,7 +56,7 @@ cd permissions_lab
 pwd
 ```
 
-**Screenshot:** Coming Soon
+**Screenshot:** 01-working-directory.png
 
 ### Learning Outcome
 
