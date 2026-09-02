@@ -56,7 +56,7 @@ cd permissions_lab
 pwd
 ```
 
-**Screenshot:** 01-working-directory.png
+**Screenshot:** ![Create Working Directory](01-working-directory.png)
 
 ### Learning Outcome
 
@@ -73,7 +73,7 @@ touch confidential.txt
 ls -l
 ```
 
-**Screenshot:** 02-view-permissions.png
+**Screenshot:** ![View Defaultsions.png](02-view-permissions.png)
 
 ### Learning Outcome
 
@@ -90,7 +90,7 @@ chmod 600 confidential.txt
 ls -l
 ```
 
-**Screenshot:** Coming Soon
+**Screenshot:** ![Restrict Access Using chmod 600](03-chmod-600.png)
 
 ### Learning Outcome
 
@@ -107,7 +107,7 @@ chmod 644 confidential.txt
 ls -l
 ```
 
-**Screenshot:** Coming Soon
+**Screenshot:** ![Modify Permissions Using chmod](04-chmod-644.png)
 
 ### Learning Outcome
 
@@ -123,7 +123,7 @@ Allowed read access to other users while retaining write permissions for the fil
 groups
 ```
 
-**Screenshot:** Coming Soon
+**Screenshot:** ![View Group Memberships](05-groups-command.png)
 
 ### Learning Outcome
 
@@ -139,7 +139,7 @@ Identified the groups associated with the current user and gained an understandi
 id
 ```
 
-**Screenshot:** Coming Soon
+**Screenshot:** ![View User and Group Information](06-id-command.png)
 
 ### Learning Outcome
 
@@ -156,7 +156,7 @@ sudo chown labuser confidential.txt
 ls -l
 ```
 
-**Screenshot:** Coming Soon
+**Screenshot:** ![Change File Ownership](07-change-file-ownership.png)
 
 ### Learning Outcome
 
