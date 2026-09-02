@@ -73,7 +73,7 @@ touch confidential.txt
 ls -l
 ```
 
-**Screenshot:** Coming Soon
+**Screenshot:** 02-view-permissions.png
 
 ### Learning Outcome
 
