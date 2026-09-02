@@ -182,6 +182,11 @@ This lab provided practical experience managing Linux file permissions and owner
 These concepts are relevant to IT Support, Service Desk, System Administration and Cyber Security roles.
 
 ---
+## Reflection
+
+This lab improved my understanding of how Linux enforces access control through permissions, ownership and group membership.
+
+I gained practical experience using chmod, chown, groups and id commands to manage file access and user permissions, and strengthened my Linux administration and troubleshooting skills through hands-on practice.
 
 ## Next Steps
 
