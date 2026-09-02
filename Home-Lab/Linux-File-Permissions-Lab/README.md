@@ -73,7 +73,7 @@ touch confidential.txt
 ls -l
 ```
 
-**Screenshot:** ![View Defaultsions.png](02-view-permissions.png)
+**Screenshot:** ![View Default Permissions.png](02-view-permissions.png)
 
 ### Learning Outcome
 
@@ -187,6 +187,8 @@ These concepts are relevant to IT Support, Service Desk, System Administration a
 This lab improved my understanding of how Linux enforces access control through permissions, ownership and group membership.
 
 I gained practical experience using chmod, chown, groups and id commands to manage file access and user permissions, and strengthened my Linux administration and troubleshooting skills through hands-on practice.
+
+---
 
 ## Next Steps
 
