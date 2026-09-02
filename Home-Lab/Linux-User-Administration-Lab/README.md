@@ -17,7 +17,7 @@ The lab focused on the complete user account lifecycle, including:
 
 ---
 
-## Skills Demonstrated
+## Skills Practised
 
 - Linux Administration
 - User Account Management
@@ -75,7 +75,7 @@ sudo adduser testuser
 cat /etc/passwd | grep testuser
 ```
 
-**Screenshot:** ![Verifyy-user](03-verify-user.png)
+**Screenshot:** ![Verify-user](03-verify-user.png)
 
 ---
 
@@ -145,7 +145,6 @@ cat /etc/passwd | grep testuser
 - Identity and Access Management (IAM)
 
 ---
-
 ## Key Takeaways
 
 This lab provided practical experience managing user accounts within a Linux environment.
@@ -153,7 +152,11 @@ This lab provided practical experience managing user accounts within a Linux env
 Through this exercise, I practised creating, verifying, securing and removing user accounts using Linux command-line tools while developing foundational system administration and access management skills.
 
 ---
+## Why this matters in IT Support
 
+User account administration is a common IT support task. Understanding how accounts are created, verified, locked, unlocked and removed helps support technicians troubleshoot access issues and understand the user lifecycle from provisioning through deprovisioning.
+
+---
 ## Next Steps
 
 Future labs will include:
