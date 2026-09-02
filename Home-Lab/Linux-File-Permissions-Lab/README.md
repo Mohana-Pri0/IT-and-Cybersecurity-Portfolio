@@ -20,7 +20,7 @@ The lab focused on understanding how Linux controls access to files through perm
 
 ---
 
-## Skills Demonstrated
+## Skills Practised
 
 - Linux Administration
 - File Permission Management
@@ -186,10 +186,14 @@ These concepts are relevant to IT Support, Service Desk, System Administration a
 
 This lab improved my understanding of how Linux enforces access control through permissions, ownership and group membership.
 
-I gained practical experience using chmod, chown, groups and id commands to manage file access and user permissions, and strengthened my Linux administration and troubleshooting skills through hands-on practice.
+I gained practical experience using chmod, chown, groups and id commands to manage file access and user permissions, and strengthened my Linux administration, access control and technical documentation skills through hands-on practice.
 
 ---
+## Practical Outcome
 
+Through this lab, I practised managing Linux file access using permissions, ownership and group membership. I can now interpret basic Linux permission settings, apply appropriate permissions using `chmod`, identify user and group information using `id` and `groups`, and change file ownership using `chown` in a controlled lab environment.
+
+---
 ## Next Steps
 
 Future labs will include:
