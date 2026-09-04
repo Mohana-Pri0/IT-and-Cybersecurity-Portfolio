@@ -1,4 +1,5 @@
 # IT-and-Cybersecurity-Portfolio
+
 Welcome to my IT and Cybersecurity Portfolio.
 
 I created this portfolio to document my hands-on learning journey while developing practical skills relevant to:
@@ -25,27 +26,26 @@ This repository contains practical labs, investigations, troubleshooting exercis
 
 ## Portfolio Projects
 
-### Home Lab
+### IT Support & Systems Administration
 
 - ✅ Linux User Administration Lab
-
-### IT Support
-
-- 🚧 Coming Soon
+- ✅ Linux File Permissions & Access Control Lab
 
 ### Cybersecurity
 
 - 🚧 Coming Soon
 
-## Skills Demonstrated
+## Skills Practised
 
 - Linux Administration
 - User Account Management
+- File Permissions & Ownership
+- Access Control
+- Identity and Access Management (IAM) Concepts
+- Least Privilege
 - Technical Troubleshooting
-- Identity and Access Management (IAM)
-- Documentation
+- Technical Documentation
 - Cybersecurity Fundamentals
 - Networking Fundamentals
-- Security Awareness
 
 Thank you for visiting my portfolio.
