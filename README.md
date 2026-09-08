@@ -1,51 +1,30 @@
-# IT-and-Cybersecurity-Portfolio
+# Hi, I'm Mohana 👋
 
-Welcome to my IT and Cybersecurity Portfolio.
+Aspiring IT Support & Cybersecurity professional based in Melbourne, Australia.
 
-I created this portfolio to document my hands-on learning journey while developing practical skills relevant to:
+## Certifications & Training
 
-- IT Support
-- Service Desk
-- Security Operations
-- Cybersecurity
-
-## About Me
-
-I am an early-career IT and Cybersecurity professional based in Melbourne, Australia.
-
-### My Background
-
-- Bachelor of Engineering (Computer Science)
 - Certificate IV in Cyber Security
 - CompTIA Security+
 - ISC2 Certified in Cybersecurity (CC)
-- Generation Australia IT Support Program
-- AWSN Victorian Summer of Cyber Internship
+- AWSN Victorian Summer of Cyber Program – Cybersecurity Consultant Intern
+- Generation Australia IT Support Program Graduate
 
-This repository contains practical labs, investigations, troubleshooting exercises and security projects that demonstrate hands-on learning beyond formal certifications.
+## Home Lab Portfolio
 
-## Portfolio Projects
+- Linux User Administration Lab
+- Linux File Permissions & Access Control Lab
+- Windows User Administration Lab
 
-### IT Support & Systems Administration
+## Technical Interests
 
-- ✅ Linux User Administration Lab
-- ✅ Linux File Permissions & Access Control Lab
-
-### Cybersecurity
-
-- 🚧 Coming Soon
-
-## Skills Practised
-
+- IT Support & Service Desk
+- Windows Administration
 - Linux Administration
-- User Account Management
-- File Permissions & Ownership
-- Access Control
-- Identity and Access Management (IAM) Concepts
-- Least Privilege
-- Technical Troubleshooting
-- Technical Documentation
-- Cybersecurity Fundamentals
-- Networking Fundamentals
+- Identity & Access Management (IAM)
+- Networking
+- Cybersecurity
 
-Thank you for visiting my portfolio.
+## Connect With Me
+
+LinkedIn: https://www.linkedin.com/in/mohana-priya-poovaraj
