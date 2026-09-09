@@ -51,7 +51,7 @@ The lab focused on identifying successful logins, failed authentication attempts
 
 ### 1. Open Event Viewer
 
-01-open-event-viewer.png
+![Open Event Viewer](01-open-event-viewer.png)
 
 #### Learning Outcome
 
@@ -61,7 +61,7 @@ Accessed Windows Event Viewer and explored the available event log categories.
 
 ### 2. Review Security Logs
 
-02-security-log.png
+![Review Security Logs](02-security-log.png)
 
 #### Learning Outcome
 
@@ -71,7 +71,7 @@ Navigated to Windows Security Logs and reviewed audit events recorded by the ope
 
 ### 3. Investigate Successful Login Events (4624)
 
-03-successful-login-event.png
+![Successful Login Event 4624](03-successful-login-event.png)
 
 #### Learning Outcome
 
@@ -81,7 +81,7 @@ Reviewed Event ID 4624, which records successful authentication activity and use
 
 ### 4. Investigate Failed Login Events (4625)
 
-04-failed-login-event.png
+![Failed Login Event 4625](04-failed-login-event.png)
 
 #### Learning Outcome
 
@@ -91,7 +91,7 @@ Investigated Event ID 4625, which records failed authentication attempts and log
 
 ### 5. Investigate User Account Creation Events (4720)
 
-05-account-created-event.png
+![User Account Creation Event 4720](05-account-created-event.png)
 
 #### Learning Outcome
 
@@ -101,7 +101,7 @@ Reviewed Event ID 4720, which records the creation of new user accounts within W
 
 ### 6. Analyse Event Details
 
-06-event-details-analysis.png
+![Event Details Analysis](06-event-details-analysis.png)
 
 #### Learning Outcome
 
@@ -111,7 +111,7 @@ Investigated detailed event information including timestamps, users, account act
 
 ### 7. Filter Security Logs
 
-07-filter-security-log.png
+![Security Log Filtering](07-filter-security-log.png)
 
 #### Learning Outcome
 
@@ -121,7 +121,7 @@ Applied filtering techniques to isolate key authentication and account managemen
 
 ### 7A. Investigate Failed Logon Activity
 
-07a-investigating-failed-logon.png
+![Failed Logon Investigation](07a-investigating-failed-logon.png)
 
 #### Learning Outcome
 
@@ -131,7 +131,7 @@ Analysed failed authentication attempts to identify affected accounts, authentic
 
 ### 8. Create Custom Authentication Monitoring View
 
-08-custom-view.png
+![Custom Authentication Monitoring View](08-custom-view.png)
 
 #### Learning Outcome
 
