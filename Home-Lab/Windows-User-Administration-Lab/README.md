@@ -190,13 +190,3 @@ Through user creation, password management, account enablement and disablement, 
 The lab also reinforced the importance of controlled account provisioning, appropriate access assignment and timely deprovisioning when managing user accounts.
 
 ---
-
-## Next Steps
-
-Future labs will include:
-
-- Windows Event Viewer & Log Analysis
-- Basic Active Directory Concepts
-- Windows Troubleshooting Lab
-- Microsoft 365 Administration Fundamentals
-- Basic Security Monitoring Activities
