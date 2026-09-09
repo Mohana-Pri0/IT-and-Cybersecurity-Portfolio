@@ -157,13 +157,3 @@ Through this exercise, I practised creating, verifying, securing and removing us
 User account administration is a common IT support task. Understanding how accounts are created, verified, locked, unlocked and removed helps support technicians troubleshoot access issues and understand the user lifecycle from provisioning through deprovisioning.
 
 ---
-## Next Steps
-
-Future labs will include:
-
-- Linux File Permissions & Ownership
-- Linux Group Administration
-- Network Troubleshooting
-- Windows User Administration
-- Event Log Analysis
-- Phishing Investigation Projects
