@@ -194,12 +194,3 @@ I gained practical experience using chmod, chown, groups and id commands to mana
 Through this lab, I practised managing Linux file access using permissions, ownership and group membership. I can now interpret basic Linux permission settings, apply appropriate permissions using `chmod`, identify user and group information using `id` and `groups`, and change file ownership using `chown` in a controlled lab environment.
 
 ---
-## Next Steps
-
-Future labs will include:
-
-- Linux Log Analysis
-- Basic Network Troubleshooting
-- Windows User Administration
-- Event Viewer Analysis
-- Phishing Investigation Projects
