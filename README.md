@@ -24,18 +24,18 @@ I enjoy troubleshooting technical problems, understanding how systems work, and 
 
 ### Operating Systems & User Administration
 
-- [Linux User Administration Lab](#)
-- [Linux File Permissions & Access Control Lab](#)
-- [Windows User Administration Lab](#)
+- Linux User Administration Lab
+- Linux File Permissions & Access Control Lab
+- Windows User Administration Lab
 
 ### Security & Monitoring
 
-- [Windows Event Viewer & Log Analysis Lab](#)
+- Windows Event Viewer & Log Analysis Lab
 
 ### Cloud, Identity & Networking
 
-- [Azure Fundamentals & Entra ID Administration Lab](#)
-- [Azure Storage & Virtual Networking Lab](#)
+- Azure Fundamentals & Entra ID Administration Lab
+- Azure Storage & Virtual Networking Lab
 
 ---
 
