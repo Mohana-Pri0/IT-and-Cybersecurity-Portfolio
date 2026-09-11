@@ -4,9 +4,17 @@ Early-career IT Support, Cloud & Cyber Security professional based in Melbourne,
 
 I have previous first-line technical support experience, a Bachelor of Engineering in Computer Science, a Certificate IV in Cyber Security, and hands-on IT Support training through Generation Australia.
 
-My GitHub portfolio documents practical home lab projects across Windows administration, Linux administration, Microsoft Azure, Microsoft Entra ID, cloud networking, IT Service Management (ITSM), identity and access management, incident management, security monitoring and troubleshooting.
+This portfolio showcases practical home lab projects covering:
 
-I enjoy solving technical problems, learning how systems work, and continuously building practical IT, cloud and support skills through hands-on projects.
+- Windows Administration
+- Linux Administration
+- Microsoft Azure
+- Microsoft Entra ID
+- Cloud Networking
+- IT Service Management (ITSM)
+- Security Monitoring & Log Analysis
+
+I enjoy troubleshooting technical issues, supporting users, and continuously building practical skills through hands-on learning.
 
 ---
 
@@ -16,81 +24,48 @@ I enjoy solving technical problems, learning how systems work, and continuously 
 - ISC2 Certified in Cybersecurity (CC)
 - Certificate IV in Cyber Security
 - AWSN Victorian Summer of Cyber Program – Cybersecurity Consultant Intern
-- Generation Australia IT Support Program – Graduate
+- Generation Australia IT Support Program Graduate
 
 ---
 
-# Home Lab Portfolio
+## Home Lab Portfolio
 
-## Operating Systems & Administration
-
+### Operating Systems & Administration
 - Linux User Administration Lab
 - Linux File Permissions & Access Control Lab
 - Windows User Administration Lab
 
-## Security & Monitoring
-
+### Security & Monitoring
 - Windows Event Viewer & Log Analysis Lab
 
-## Cloud, Identity & Networking
-
+### Cloud, Identity & Networking
 - Azure Fundamentals & Entra ID Administration Lab
 - Azure Storage & Virtual Networking Lab
 
-## IT Service Management & Operations
-
+### IT Service Management
 - Jira Service Management & ITSM Lab
 
 ---
 
-# Technical Areas
+## Technical Interests
 
 - IT Support & Service Desk
-- IT Service Management (ITSM)
-- Incident Management
-- Windows Administration
-- Linux Administration
-- Microsoft 365 Fundamentals
+- Microsoft 365
 - Microsoft Azure
 - Microsoft Entra ID
+- Windows Administration
+- Linux Administration
 - Cloud Infrastructure
-- Cloud Networking
 - Identity & Access Management (IAM)
 - Networking
 - Security Monitoring
-- Cyber Security
 
 ---
 
-# Currently Developing
+## Connect With Me
 
-- Microsoft Cloud Technologies
-- Azure Infrastructure & Administration
-- Service Desk & IT Operations
-- Cloud Identity & Access Management
-- Security Monitoring & Incident Response
-- SOC & Blue Team Fundamentals
-
----
-
-# Career Interests
-
-- IT Support
-- Service Desk
-- Managed Services
-- IT Operations
-- Cloud Support
-- Systems Administration
-- Cyber Security
-
----
-
-# Connect With Me
-
-### LinkedIn
-
+🔗 LinkedIn  
 https://www.linkedin.com/in/mohana-priya-poovaraj
 
-### GitHub Portfolio
-
+🔗 GitHub Portfolio  
 https://github.com/Mohana-Pri0/IT-and-Cybersecurity-Portfolio
