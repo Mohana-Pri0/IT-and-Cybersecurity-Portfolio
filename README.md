@@ -1,12 +1,12 @@
 # Hi, I'm Mohana 👋
 
-Early-career IT Support & Cyber Security professional based in Melbourne, Australia.
+Early-career IT Support, Cloud & Cyber Security professional based in Melbourne, Australia.
 
 I have previous first-line technical support experience, a Bachelor of Engineering in Computer Science, a Certificate IV in Cyber Security, and hands-on IT Support training through Generation Australia.
 
-My GitHub portfolio documents practical home labs and cybersecurity projects across Windows, Linux, Microsoft Azure, Microsoft Entra ID, networking, identity and access management, and security monitoring.
+My GitHub portfolio documents practical home lab projects across Windows administration, Linux administration, Microsoft Azure, Microsoft Entra ID, cloud networking, IT Service Management (ITSM), identity and access management, incident management, security monitoring and troubleshooting.
 
-I enjoy troubleshooting technical problems, understanding how systems work, and continuously building practical skills through hands-on learning.
+I enjoy solving technical problems, learning how systems work, and continuously building practical IT, cloud and support skills through hands-on projects.
 
 ---
 
@@ -20,33 +20,41 @@ I enjoy troubleshooting technical problems, understanding how systems work, and 
 
 ---
 
-## 🧪 Home Lab Portfolio
+# Home Lab Portfolio
 
-### Operating Systems & User Administration
+## Operating Systems & Administration
 
 - Linux User Administration Lab
 - Linux File Permissions & Access Control Lab
 - Windows User Administration Lab
 
-### Security & Monitoring
+## Security & Monitoring
 
 - Windows Event Viewer & Log Analysis Lab
 
-### Cloud, Identity & Networking
+## Cloud, Identity & Networking
 
 - Azure Fundamentals & Entra ID Administration Lab
 - Azure Storage & Virtual Networking Lab
 
+## IT Service Management & Operations
+
+- Jira Service Management & ITSM Lab
+
 ---
 
-## 🛠️ Technical Areas
+# Technical Areas
 
 - IT Support & Service Desk
+- IT Service Management (ITSM)
+- Incident Management
 - Windows Administration
 - Linux Administration
+- Microsoft 365 Fundamentals
 - Microsoft Azure
 - Microsoft Entra ID
 - Cloud Infrastructure
+- Cloud Networking
 - Identity & Access Management (IAM)
 - Networking
 - Security Monitoring
@@ -54,20 +62,35 @@ I enjoy troubleshooting technical problems, understanding how systems work, and 
 
 ---
 
-## 📚 Currently Developing
+# Currently Developing
 
 - Microsoft Cloud Technologies
-- Azure Networking & Infrastructure
+- Azure Infrastructure & Administration
+- Service Desk & IT Operations
 - Cloud Identity & Access Management
-- Security Monitoring
+- Security Monitoring & Incident Response
 - SOC & Blue Team Fundamentals
 
 ---
 
-## 🔗 Connect With Me
+# Career Interests
 
-**LinkedIn**  
+- IT Support
+- Service Desk
+- Managed Services
+- IT Operations
+- Cloud Support
+- Systems Administration
+- Cyber Security
+
+---
+
+# Connect With Me
+
+### LinkedIn
+
 https://www.linkedin.com/in/mohana-priya-poovaraj
 
-**GitHub Portfolio**  
+### GitHub Portfolio
+
 https://github.com/Mohana-Pri0/IT-and-Cybersecurity-Portfolio
