@@ -1,21 +1,12 @@
 # Hi, I'm Mohana 👋
 
-Early-career IT Support, Cloud & Cyber Security professional based in Melbourne, Australia.
+Early-career IT Support, IT Operations and Cyber Security professional based in Melbourne, Australia.
 
-I have previous first-line technical support experience, a Bachelor of Engineering in Computer Science, a Certificate IV in Cyber Security, and hands-on IT Support training through Generation Australia.
+I have previous first-line technical support experience, a Bachelor of Engineering in Computer Science, a Certificate IV in Cyber Security, CompTIA Security+, ISC2 Certified in Cybersecurity (CC), and have completed hands-on IT Support training through Generation Australia.
 
-This portfolio showcases practical home lab projects covering:
+This portfolio showcases practical projects across IT Support, IT Operations, Cloud, Security Monitoring and Generative AI, with a focus on applying technology to real-world operational and business scenarios.
 
-- Windows Administration
-- Linux Administration
-- Microsoft Azure
-- Microsoft Entra ID
-- Cloud Networking
-- IT Service Management (ITSM)
-- Security Monitoring & Log Analysis
-
-I enjoy troubleshooting technical issues, supporting users, and continuously building practical skills through hands-on learning.
-
+I enjoy solving technical problems, improving processes, working with emerging technologies and turning learning into practical projects.
 ---
 
 ## Certifications & Professional Development
@@ -23,42 +14,47 @@ I enjoy troubleshooting technical issues, supporting users, and continuously bui
 - CompTIA Security+
 - ISC2 Certified in Cybersecurity (CC)
 - Certificate IV in Cyber Security
+- AWSN Victorian Women in Security Pathways Program
 - AWSN Victorian Summer of Cyber Program – Cybersecurity Consultant Intern
 - Generation Australia IT Support Program Graduate
 
 ---
 
-## Home Lab Portfolio
+## Featured Projects
 
-### Operating Systems & Administration
+### Security Monitoring & Operations
+
+- Splunk Security Monitoring & Log Analysis Lab
+- Windows Event Viewer & Log Analysis Lab
+- Jira Service Management & ITSM Lab
+
+### Cloud & Identity
+
+- Azure Fundamentals & Entra ID Administration Lab
+- Azure Storage & Virtual Networking Lab
+
+### Systems Administration
+
 - Linux User Administration Lab
 - Linux File Permissions & Access Control Lab
 - Windows User Administration Lab
 
-### Security & Monitoring
-- Windows Event Viewer & Log Analysis Lab
+### AI & Emerging Technology
 
-### Cloud, Identity & Networking
-- Azure Fundamentals & Entra ID Administration Lab
-- Azure Storage & Virtual Networking Lab
-
-### IT Service Management
-- Jira Service Management & ITSM Lab
+- AI-Powered IT Support Incident Triage Assistant
 
 ---
 
-## Technical Interests
+## Current Areas of Interest
 
-- IT Support & Service Desk
-- Microsoft 365
-- Microsoft Azure
-- Microsoft Entra ID
-- Windows Administration
-- Linux Administration
-- Cloud Infrastructure
-- Identity & Access Management (IAM)
-- Networking
-- Security Monitoring
+- IT Operations
+- Service Desk & IT Support
+- Security Operations
+- Microsoft Azure & Entra ID
+- Security Monitoring & SIEM
+- Identity & Access Management
+- Generative AI
+- Cloud Technologies
 
 ---
 
