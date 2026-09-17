@@ -104,6 +104,7 @@ Example incidents:
 
 No real customer or organisational data was used.
 
+![ticket-dataset-loaded](01-ticket-dataset-loaded.png)
 ---
 
 ## AI Workflow
@@ -166,9 +167,9 @@ Tested the AI against an authentication-related incident and reviewed:
 
 ### 2. VPN Connectivity Incident
 
-05-ai-vpn-triage-output.png
+![vpn-triage-output](05-ai-vpn-triage-output.png)
 
-06-ai-vpn-triage-output-continuation.png
+![vpn-triage-output-continuation](06-ai-vpn-triage-output-continuation.png)
 
 Tested a networking-related incident to evaluate troubleshooting recommendations and escalation guidance.
 
@@ -176,21 +177,21 @@ Tested a networking-related incident to evaluate troubleshooting recommendations
 
 ### 3. Suspicious Email Incident
 
-08-ai-phishing-triage-output.png
+![phishing-triage-output](08-ai-phishing-triage-output.png)
 
 ![Phishing Email Analysis Continued](09-ai-phishing-triage-output-continuation.png)
 
-olving a suspicious email, focusing on investigation, containment and escalation guidance.
+solving a suspicious email, focusing on investigation, containment and escalation guidance.
 
 ---
 
 ### Analysis Export
 
-04-analysis-exported-to-file.png
+![analysis-exported-to-file](04-analysis-exported-to-file.png)
 
-07-vpn-analysis-exported.png
+![vpn-analysis-exported](07-vpn-analysis-exported.png)
 
-10-phishing-analysis-exported.png
+![phishing-analysis-exported](10-phishing-analysis-exported.png)
 
 All AI-generated analyses were exported into reusable documentation files.
 
@@ -217,7 +218,7 @@ The testing demonstrated that the prototype produced useful and structured recom
 
 Human validation remained necessary before operational decisions were made.
 
-11-validation-results.png
+![alidation-results](11-validation-results.png)
 
 ---
 
@@ -259,7 +260,7 @@ Action
 
 AI can significantly improve productivity in IT Support environments, particularly through incident triage, troubleshooting support and documentation generation. However, human judgement remains essential to validate recommendations, assess security implications and make final operational decisions.
 
-12-responsible-ai-considerations.png
+![responsible-ai-considerations](12-responsible-ai-considerations.png)
 
 ---
 
