@@ -4,5 +4,5 @@ Practical projects covering Windows user administration, authentication events, 
 
 ## Projects
 
-- ./Windows-User-Administration-Lab/
-- ./Windows-Event-Viewer-and-Log-Analysis-Lab/
+- [Windows-User-Administration-Lab](Windows-User-Administration-Lab)
+- [Windows-Event-Viewer-and-Log-Analysis-Lab](Windows-Event-Viewer-and-Log-Analysis-Lab)
