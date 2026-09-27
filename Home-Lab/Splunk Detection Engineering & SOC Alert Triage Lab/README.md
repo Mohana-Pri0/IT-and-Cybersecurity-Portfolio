@@ -11,6 +11,34 @@
 
 ---
 
+## Summary
+
+Built and tested a lab-based Splunk detection and SOC alert-triage workflow using 49 fictional security events.
+
+The project includes:
+
+- Five tested SPL detections covering authentication, VPN and privileged-access activity
+- Event correlation across failed logins, successful authentication, VPN access and an account change
+- A scheduled Splunk alert for repeated authentication failures
+- A seven-panel SOC triage dashboard
+- False-positive analysis, escalation criteria and human-validation controls
+- MITRE ATT&CK mapping for relevant investigative behaviours
+
+**Key result:** All five detections produced their intended results against the controlled dataset, including repeated login failures, possible password-spraying behaviour, unfamiliar VPN activity and a privileged-group change.
+
+> This project uses fictional data and illustrative thresholds. It demonstrates laboratory practice and should not be interpreted as production SOC experience.
+
+---
+
+## Project Files
+
+- create_detection_dataset.py
+- detection_queries.spl
+- sample_security_detection_events.csv
+- screenshots
+
+---
+
 ## Overview
 
 This project extends my earlier **Splunk Security Monitoring and Log Analysis Lab**.
@@ -79,7 +107,7 @@ flowchart LR
     C --> D[SPL Detection Searches]
     D --> E[Scheduled Lab Alert]
     D --> F[SOC Triage Dashboard]
-    E --> G[Analyst Triage Runbook]
+    E --> G[Analyst Triage Process]
     F --> G
     G --> H{Human Assessment}
     H -->|Supported benign explanation| I[Document and Close]
@@ -87,10 +115,6 @@ flowchart LR
     I --> K[Detection Review and Tuning]
     J --> K
 ```
-
-The standalone workflow document is available at:
-
-architecture/detection-workflow.md
 
 ---
 
@@ -128,6 +152,7 @@ All results require human validation before escalation or closure.
 - Python
 - Markdown
 - Git and GitHub
+
 ---
 
 ## Dataset
@@ -136,17 +161,13 @@ A fictional dataset containing **49 structured security events** was created spe
 
 The dataset was generated using:
 
-```text
-create_detection_dataset.py
-```
+- create_detection_dataset.py
 
-The resulting CSV is stored at:
+The resulting dataset is available at:
 
-```text
-dataset/sample_security_detection_events.csv
-```
+- sample_security_detection_events.csv
 
-### Dataset fields
+### Dataset Fields
 
 | Field | Description |
 |---|---|
@@ -159,7 +180,7 @@ dataset/sample_security_detection_events.csv
 | `location` | Fictional source location |
 | `details` | Additional event information |
 
-### Included scenarios
+### Included Scenarios
 
 - Normal successful logins
 - Repeated authentication failures
@@ -181,13 +202,9 @@ The source addresses use documentation-only IP ranges:
 203.0.113.0/24
 ```
 
-The detailed field definition is available at:
+### Dataset Generation Evidence
 
-dataset/data_dictionary.md
-
-### Dataset generation evidence
-
-screenshots/01-fictional-dataset-created.png
+![screenshots/01-fictional-dataset-created.png](screenshots/01-fictional-dataset-created.png)
 
 ---
 
@@ -209,13 +226,15 @@ security_log_lab
 
 Splunk successfully ingested all **49 fictional events**.
 
-### Ingestion evidence
+### Ingestion Preview
 
-screenshots/02-data-ingestion-preview.png
+![screenshots/02-data-ingestion-preview.png](screenshots/02-data-ingestion-preview.png)
 
-screenshots/04-data-ingestion-review.png
+### Ingestion Count Validation
 
-screenshots/06-ingestion-count-validation.png
+![screenshots/06-ingestion-count-validation.png](screenshots/06-ingestion-count-validation.png)
+
+Additional ingestion evidence is available in the screenshots/.
 
 ---
 
@@ -241,13 +260,17 @@ The validation confirmed:
 - 11 fictional source IP addresses
 - 6 fictional user accounts
 
-### Validation evidence
+### Structured Field Validation
 
-screenshots/07-structured-field-validation.png
+![screenshots/07-structured-field-validation.png](screenshots/07-structured-field-validation.png)
 
-screenshots/08-field-summary.png
+### Field Summary
 
-screenshots/09-event-value-validation.png
+![screenshots/08-field-summary.png](screenshots/08-field-summary.png)
+
+### Event Value Validation
+
+![screenshots/09-event-value-validation.png](screenshots/09-event-value-validation.png)
 
 ---
 
@@ -255,7 +278,7 @@ screenshots/09-event-value-validation.png
 
 Five detection use cases and one correlation query were developed.
 
-| Detection | Security focus | Test result |
+| Detection | Security Focus | Test Result |
 |---|---|---:|
 | Repeated Authentication Failures | Authentication monitoring | Passed |
 | Successful Login After Repeated Failures | Account-compromise investigation | Passed |
@@ -264,9 +287,9 @@ Five detection use cases and one correlation query were developed.
 | Privileged Group Change | Privileged-access monitoring | Passed |
 | Admin Activity Timeline | Event correlation | Passed |
 
-All SPL searches are stored in:
+All tested SPL searches are available in:
 
-queries/detection_queries.spl
+- detection_queries.spl
 
 ---
 
@@ -291,11 +314,7 @@ Possible explanations include:
 - Credential guessing
 - Brute-force activity
 
-screenshots/10-repeated-login-failures.png
-
-Detailed detection documentation:
-
-detections/01-repeated-login-failures.md
+![screenshots/10-repeated-login-failures.png](screenshots/10-repeated-login-failures.png)
 
 ---
 
@@ -315,11 +334,7 @@ Outcome: success
 
 This is a higher-priority investigation lead, but it does not independently prove account compromise.
 
-screenshots/11-success-after-failures.png
-
-Detailed detection documentation:
-
-detections/02-success-after-failures.md
+![screenshots/11-success-after-failures.png](screenshots/11-success-after-failures.png)
 
 ---
 
@@ -344,11 +359,7 @@ Affected fictional accounts:
 
 This pattern may be consistent with password spraying. Shared infrastructure, authorised testing and application misconfiguration must also be considered.
 
-screenshots/12-multiple-accounts-one-source.png
-
-Detailed detection documentation:
-
-detections/03-multiple-accounts-one-source.md
+![screenshots/12-multiple-accounts-one-source.png](screenshots/12-multiple-accounts-one-source.png)
 
 ---
 
@@ -368,11 +379,7 @@ Outcome: success
 
 The activity requires analyst review but is not automatically classified as malicious.
 
-screenshots/13-vpn-activity-review.png
-
-Detailed detection documentation:
-
-detections/04-vpn-activity-review.md
+![screenshots/13-vpn-activity-review.png](screenshots/13-vpn-activity-review.png)
 
 ---
 
@@ -392,11 +399,7 @@ Details: User added to privileged group
 
 The change should be checked against an approved access or change request before closure.
 
-screenshots/14-privileged-group-change.png
-
-Detailed detection documentation:
-
-detections/05-privileged-group-change.md
+![screenshots/14-privileged-group-change.png](screenshots/14-privileged-group-change.png)
 
 ---
 
@@ -413,7 +416,7 @@ The timeline linked:
 
 Reviewing related activity provides stronger context than assessing each event separately.
 
-screenshots/15-admin-activity-timeline.png
+![screenshots/15-admin-activity-timeline.png](screenshots/15-admin-activity-timeline.png)
 
 The sequence was treated as an investigation lead rather than automatic confirmation of compromise.
 
@@ -454,11 +457,12 @@ A production implementation would require:
 - Approved notification channels
 - Documented response procedures
 
-screenshots/16-repeated-failures-alert-configuration.png
+![screenshots/16-repeated-failures-alert-configuration.png](screenshots/16-repeated-failures-alert-configuration.png)
 
-screenshots/17-alert-created.png
+Additional alert evidence:
 
-screenshots/18-lab-alerts-list.png
+- ![screenshots/17-alert-created.png](screenshots/17-alert-created.png)
+- ![screenshots/18-lab-alerts-list.png](screenshots/18-lab-alerts-list.png)
 
 ---
 
@@ -478,36 +482,58 @@ The dashboard includes:
 
 The dashboard uses an **All time** range because the events form a static historical lab dataset.
 
-### Dashboard evidence
+### Dashboard Overview
 
-screenshots/19-soc-triage-dashboard-part1.png
+![screenshots/19-soc-triage-dashboard-part1.png](screenshots/19-soc-triage-dashboard-part1.png)
 
-screenshots/20-soc-triage-dashboard-part2.png
+Additional dashboard evidence:
 
-screenshots/21-soc-triage-dashboard-part3.png
-
-screenshots/22-soc-triage-dashboard-privileged-change.png
+- ![screenshots/20-soc-triage-dashboard-part2.png](screenshots/20-soc-triage-dashboard-part2.png)
+- ![screenshots/21-soc-triage-dashboard-part3.png](screenshots/21-soc-triage-dashboard-part3.png)
+- ![screenshots/22-soc-triage-dashboard-privileged-change.png](screenshots/22-soc-triage-dashboard-privileged-change.png)
 
 ---
 
-## Analyst Triage Runbook
+## Analyst Triage Process
 
-An authentication-alert triage runbook was created to support consistent analyst review.
+A structured triage process was developed to support consistent review of the detection results.
 
-The runbook covers:
+### Initial Review
 
-- Initial alert review
-- Authentication-event pivots
-- VPN and account-change review
-- Possible benign explanations
-- Evidence-recording requirements
-- Escalation criteria
-- Closure criteria
-- Human-review requirements
+1. Record the detection name and triggering condition.
+2. Identify the affected user.
+3. Record the source IP address and device.
+4. Review the relevant time range.
+5. Compare failed and successful authentications.
+6. Check whether multiple accounts were targeted.
+7. Review related VPN activity.
+8. Review account-change and privileged-access activity.
+9. Record the SPL searches used.
+10. Document the evidence and remaining uncertainty.
 
-View the runbook:
+### Escalation Criteria
 
-runbooks/authentication-alert-triage.md
+Escalation would be considered when:
+
+- A successful login follows repeated failures.
+- One source targets multiple accounts.
+- A privileged account is involved.
+- An unknown device or source is present.
+- A privileged-group change lacks an approved request.
+- Multiple users are affected.
+- Related suspicious activity is identified.
+- Available evidence is insufficient for safe closure.
+
+### Closure Criteria
+
+Closure would require:
+
+- A supported explanation for the activity
+- Validated user or system context
+- Approved evidence for any access change
+- No related suspicious activity
+- Documented searches and findings
+- A clear and defensible closure decision
 
 ---
 
@@ -515,7 +541,7 @@ runbooks/authentication-alert-triage.md
 
 Each query was executed against the fictional dataset and compared with the expected scenario.
 
-| Detection | Test result | Human review required? |
+| Detection | Test Result | Human Review Required? |
 |---|---:|---:|
 | Repeated Login Failures | Passed | Yes |
 | Success After Failures | Passed | Yes |
@@ -524,9 +550,14 @@ Each query was executed against the fictional dataset and compared with the expe
 | Privileged Group Change | Passed | Yes |
 | Admin Activity Timeline | Passed | Yes |
 
-View the full validation report:
+Validation included:
 
-validation/detection-test-results.md
+- Confirming required structured fields
+- Comparing query outputs with the expected scenarios
+- Testing illustrative thresholds
+- Reviewing possible benign explanations
+- Identifying investigation pivots
+- Confirming that all results required human review
 
 ---
 
@@ -555,15 +586,11 @@ Potential tuning approaches included:
 - Applying verified allow lists
 - Using suppression to reduce duplicate alerts
 
-View the full tuning notes:
-
-validation/false-positive-notes.md
-
 ---
 
 ## MITRE ATT&CK Mapping
 
-| Detection | Investigative mapping |
+| Detection | Investigative Mapping |
 |---|---|
 | Repeated authentication failures | T1110, Brute Force |
 | Multiple accounts targeted | T1110.003, Password Spraying |
@@ -633,8 +660,8 @@ The project successfully developed and validated:
 - One correlation investigation
 - One scheduled laboratory alert
 - One seven-panel SOC triage dashboard
-- One analyst-triage runbook
-- False-positive and tuning documentation
+- One documented analyst-triage process
+- False-positive and tuning considerations
 - Detection-validation evidence
 
 All searches produced the intended results against the controlled fictional dataset.
@@ -689,12 +716,11 @@ Phase 2
 ├── Correlation searches
 ├── Scheduled alerts
 ├── SOC triage dashboard
-├── Analyst runbook
+├── Analyst-triage process
 ├── Detection validation
 ├── False-positive analysis
 └── Tuning considerations
 ```
-
 ---
 
 ## Career Relevance
