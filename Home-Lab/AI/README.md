@@ -4,4 +4,4 @@ Practical projects covering Python, API integration, Generative AI, structured o
 
 ## Projects
 
-- ./AI-Assisted-IT-Support-Incident-Triage-Assistant/
+- [AI-Assisted-IT-Support-Incident-Triage-Assistant](AI-Assisted-IT-Support-Incident-Triage-Assistant)
