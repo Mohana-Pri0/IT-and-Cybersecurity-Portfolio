@@ -4,4 +4,4 @@ Practical projects covering incidents, service requests, ticket categorisation, 
 
 ## Projects
 
-- ./Jira-Service-Management-and-ITSM-Lab/
+- [Jira-Service-Management-and-ITSM-Lab](Jira-Service-Management-and-ITSM-Lab)
