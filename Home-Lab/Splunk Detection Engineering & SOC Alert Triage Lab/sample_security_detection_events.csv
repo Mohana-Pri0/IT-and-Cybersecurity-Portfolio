@@ -1,0 +1,50 @@
+timestamp,event_type,outcome,user,src_ip,device,location,details
+2026-09-20 08:00:00,login,success,mohana,192.0.2.10,LAPTOP-001,Melbourne,Normal user authentication
+2026-09-20 08:15:00,login,success,helpdesk,192.0.2.20,LAPTOP-002,Melbourne,Normal user authentication
+2026-09-20 08:30:00,login,success,analyst1,192.0.2.30,LAPTOP-003,Sydney,Normal user authentication
+2026-09-20 08:45:00,login,success,user01,192.0.2.40,LAPTOP-004,Brisbane,Normal user authentication
+2026-09-20 09:00:00,login,failure,admin,203.0.113.10,UNKNOWN-DEVICE,Melbourne,Incorrect password
+2026-09-20 09:01:00,login,failure,admin,203.0.113.10,UNKNOWN-DEVICE,Melbourne,Incorrect password
+2026-09-20 09:02:00,login,failure,admin,203.0.113.10,UNKNOWN-DEVICE,Melbourne,Incorrect password
+2026-09-20 09:03:00,login,failure,admin,203.0.113.10,UNKNOWN-DEVICE,Melbourne,Incorrect password
+2026-09-20 09:04:00,login,failure,admin,203.0.113.10,UNKNOWN-DEVICE,Melbourne,Incorrect password
+2026-09-20 09:05:00,login,failure,admin,203.0.113.10,UNKNOWN-DEVICE,Melbourne,Incorrect password
+2026-09-20 09:07:00,login,success,admin,203.0.113.10,UNKNOWN-DEVICE,Melbourne,Authentication succeeded after repeated failures
+2026-09-20 10:00:00,login,failure,mohana,198.51.100.25,UNKNOWN-DEVICE,Unknown,Authentication failure from shared source
+2026-09-20 10:01:00,login,failure,helpdesk,198.51.100.25,UNKNOWN-DEVICE,Unknown,Authentication failure from shared source
+2026-09-20 10:02:00,login,failure,analyst1,198.51.100.25,UNKNOWN-DEVICE,Unknown,Authentication failure from shared source
+2026-09-20 10:03:00,login,failure,finance01,198.51.100.25,UNKNOWN-DEVICE,Unknown,Authentication failure from shared source
+2026-09-20 10:05:00,login,failure,finance01,198.51.100.25,UNKNOWN-DEVICE,Unknown,Repeated authentication failure
+2026-09-20 10:06:00,login,failure,finance01,198.51.100.25,UNKNOWN-DEVICE,Unknown,Repeated authentication failure
+2026-09-20 10:07:00,login,failure,finance01,198.51.100.25,UNKNOWN-DEVICE,Unknown,Repeated authentication failure
+2026-09-20 11:00:00,vpn,success,mohana,192.0.2.50,LAPTOP-001,Melbourne,Expected remote-access connection
+2026-09-20 11:10:00,vpn,success,mohana,192.0.2.50,LAPTOP-001,Melbourne,Expected remote-access connection
+2026-09-20 11:20:00,vpn,success,mohana,192.0.2.50,LAPTOP-001,Melbourne,Expected remote-access connection
+2026-09-20 11:30:00,vpn,success,mohana,192.0.2.50,LAPTOP-001,Melbourne,Expected remote-access connection
+2026-09-20 11:40:00,vpn,success,mohana,192.0.2.50,LAPTOP-001,Melbourne,Expected remote-access connection
+2026-09-20 12:00:00,vpn,success,admin,203.0.113.75,UNKNOWN-DEVICE,Unknown,Remote-access connection from an unfamiliar source
+2026-09-20 13:00:00,software_install,approved,mohana,192.0.2.60,LAPTOP-001,Melbourne,Software installation: Microsoft Teams
+2026-09-20 13:05:00,software_install,approved,helpdesk,192.0.2.61,LAPTOP-002,Melbourne,Software installation: Security Update
+2026-09-20 13:10:00,software_install,review_required,user01,192.0.2.62,LAPTOP-003,Melbourne,Software installation: Unknown Toolbar
+2026-09-20 14:00:00,account_change,success,helpdesk,192.0.2.20,ADMIN-WS01,Melbourne,Password reset completed for user01
+2026-09-20 14:10:00,account_change,success,admin,203.0.113.10,UNKNOWN-DEVICE,Melbourne,User added to privileged group
+2026-09-20 15:00:00,login,success,mohana,192.0.2.10,LAPTOP-001,Melbourne,Normal user authentication
+2026-09-20 15:03:00,login,success,helpdesk,192.0.2.20,LAPTOP-002,Melbourne,Normal user authentication
+2026-09-20 15:06:00,login,success,analyst1,192.0.2.30,LAPTOP-003,Sydney,Normal user authentication
+2026-09-20 15:09:00,login,success,user01,192.0.2.40,LAPTOP-004,Brisbane,Normal user authentication
+2026-09-20 15:12:00,login,success,mohana,192.0.2.10,LAPTOP-001,Melbourne,Normal user authentication
+2026-09-20 15:15:00,login,success,helpdesk,192.0.2.20,LAPTOP-002,Melbourne,Normal user authentication
+2026-09-20 15:18:00,login,success,analyst1,192.0.2.30,LAPTOP-003,Sydney,Normal user authentication
+2026-09-20 15:21:00,login,success,user01,192.0.2.40,LAPTOP-004,Brisbane,Normal user authentication
+2026-09-20 15:24:00,login,success,mohana,192.0.2.10,LAPTOP-001,Melbourne,Normal user authentication
+2026-09-20 15:27:00,login,success,helpdesk,192.0.2.20,LAPTOP-002,Melbourne,Normal user authentication
+2026-09-20 15:30:00,login,success,analyst1,192.0.2.30,LAPTOP-003,Sydney,Normal user authentication
+2026-09-20 15:33:00,login,success,user01,192.0.2.40,LAPTOP-004,Brisbane,Normal user authentication
+2026-09-20 15:36:00,login,success,mohana,192.0.2.10,LAPTOP-001,Melbourne,Normal user authentication
+2026-09-20 15:39:00,login,success,helpdesk,192.0.2.20,LAPTOP-002,Melbourne,Normal user authentication
+2026-09-20 15:42:00,login,success,analyst1,192.0.2.30,LAPTOP-003,Sydney,Normal user authentication
+2026-09-20 15:45:00,login,success,user01,192.0.2.40,LAPTOP-004,Brisbane,Normal user authentication
+2026-09-20 15:48:00,login,success,mohana,192.0.2.10,LAPTOP-001,Melbourne,Normal user authentication
+2026-09-20 15:51:00,login,success,helpdesk,192.0.2.20,LAPTOP-002,Melbourne,Normal user authentication
+2026-09-20 15:54:00,login,success,analyst1,192.0.2.30,LAPTOP-003,Sydney,Normal user authentication
+2026-09-20 15:57:00,login,success,user01,192.0.2.40,LAPTOP-004,Brisbane,Normal user authentication
