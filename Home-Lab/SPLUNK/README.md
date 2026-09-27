@@ -4,5 +4,5 @@ Practical Splunk Cloud projects covering log ingestion, monitoring, SPL searches
 
 ## Projects
 
-- ./Splunk-Security-Monitoring-and-Log-Analysis-Lab/
-- ./Splunk-Detection-Engineering-and-SOC-Alert-Triage-Lab/
+- [Splunk-Security-Monitoring-and-Log-Analysis-Lab](Splunk-Security-Monitoring-and-Log-Analysis-Lab)
+- [Splunk-Detection-Engineering-and-SOC-Alert-Triage-Lab](Splunk-Detection-Engineering-and-SOC-Alert-Triage-Lab)
