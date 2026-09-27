@@ -4,5 +4,5 @@ Practical projects covering Linux users, passwords, groups, file permissions, ow
 
 ## Projects
 
-- ./Linux-User-Administration-Lab/
-- ./Linux-File-Permissions-and-Access-Control-Lab/
+- [Linux-User-Administration-Lab](Linux-User-Administration-Lab)
+- [Linux-File-Permissions-and-Access-Control-Lab](Linux-File-Permissions-and-Access-Control-Lab)
