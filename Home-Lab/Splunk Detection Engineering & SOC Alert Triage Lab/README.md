@@ -32,10 +32,10 @@ The project includes:
 
 ## Project Files
 
-- create_detection_dataset.py
-- detection_queries.spl
-- sample_security_detection_events.csv
-- screenshots
+- [create_detection_dataset.py](create_detection_dataset.py)
+- [detection_queries.spl](detection_queries.spl)
+- [sample_security_detection_events.csv](sample_security_detection_events.csv)
+- [screenshots](screenshots)
 
 ---
 
@@ -161,11 +161,11 @@ A fictional dataset containing **49 structured security events** was created spe
 
 The dataset was generated using:
 
-- create_detection_dataset.py
+- [create_detection_dataset.py](create_detection_dataset.py)
 
 The resulting dataset is available at:
 
-- sample_security_detection_events.csv
+- [sample_security_detection_events.csv](sample_security_detection_events.csv)
 
 ### Dataset Fields
 
@@ -289,7 +289,7 @@ Five detection use cases and one correlation query were developed.
 
 All tested SPL searches are available in:
 
-- detection_queries.spl
+- [detection_queries.spl](detection_queries.spl)
 
 ---
 
