@@ -1,0 +1,133 @@
+# Detection 1: Repeated Authentication Failures
+# Identifies at least five failed logins by the same user and source
+# within a ten-minute time bucket.
+
+index=main sourcetype=security_detection_lab
+event_type="login" outcome="failure"
+| bin _time span=10m
+| stats count as failed_attempts by _time user src_ip
+| where failed_attempts >= 5
+| sort - failed_attempts
+
+
+# Detection 2: Successful Login After Repeated Failures
+# Identifies a successful login after at least five failures involving
+# the same user and source IP.
+
+index=main sourcetype=security_detection_lab event_type="login"
+| sort 0 user src_ip _time
+| streamstats count(eval(outcome="failure")) as prior_failures by user src_ip
+| where outcome="success" AND prior_failures >= 5
+| table _time user src_ip device location prior_failures details
+
+
+# Detection 3: Multiple Accounts Targeted From One Source
+# Identifies one source IP generating failed authentication attempts
+# against at least three distinct user accounts.
+
+index=main sourcetype=security_detection_lab
+event_type="login" outcome="failure"
+| stats dc(user) as unique_users
+        count as failed_attempts
+        values(user) as targeted_users
+        by src_ip
+| where unique_users >= 3 AND failed_attempts >= 5
+| sort - unique_users
+
+
+# Detection 4: VPN Activity Requiring Review
+# Identifies successful VPN events recorded against an unknown
+# device or location. Results require analyst validation.
+
+index=main sourcetype=security_detection_lab event_type="vpn"
+| where location="Unknown" OR device="UNKNOWN-DEVICE"
+| table _time user src_ip device location outcome details
+| sort _time
+
+
+# Detection 5: Privileged Group Change
+# Identifies account-change events containing a reference
+# to privileged-group membership.
+
+index=main sourcetype=security_detection_lab
+event_type="account_change"
+| search details="*privileged group*"
+| table _time user src_ip device location outcome details
+
+
+# Investigation Query: Admin Activity Timeline
+# Correlates authentication, VPN and account-change events
+# involving the fictional admin account.
+
+index=main sourcetype=security_detection_lab user="admin"
+| table _time event_type outcome user src_ip device location details
+| sort _time
+
+
+
+# ------------------------------------------------------------
+# SOC Authentication Detection and Triage Dashboard Searches
+# ------------------------------------------------------------
+# ============================================================
+# SOC Authentication Detection and Triage Dashboard Searches
+# ============================================================
+
+# Dashboard Panel 1: Failed Logins Over Time
+
+index=main sourcetype=security_detection_lab
+event_type="login" outcome="failure"
+| timechart span=10m count as failed_logins
+
+
+# Dashboard Panel 2: Failed Login Attempts by User
+
+index=main sourcetype=security_detection_lab
+event_type="login" outcome="failure"
+| stats count as failed_attempts by user
+| sort - failed_attempts
+
+
+# Dashboard Panel 3: Failed Login Attempts by Source IP
+
+index=main sourcetype=security_detection_lab
+event_type="login" outcome="failure"
+| stats count as failed_attempts by src_ip
+| sort - failed_attempts
+
+
+# Dashboard Panel 4: Successful Login After Repeated Failures
+
+index=main sourcetype=security_detection_lab event_type="login"
+| sort 0 user src_ip _time
+| streamstats count(eval(outcome="failure")) as prior_failures by user src_ip
+| where outcome="success" AND prior_failures >= 5
+| table _time user src_ip device location prior_failures details
+
+
+# Dashboard Panel 5: Multiple Accounts Targeted From One Source
+
+index=main sourcetype=security_detection_lab
+event_type="login" outcome="failure"
+| stats dc(user) as unique_users
+        count as failed_attempts
+        values(user) as targeted_users
+        by src_ip
+| where unique_users >= 3 AND failed_attempts >= 5
+| sort - unique_users
+
+
+# Dashboard Panel 6: VPN Activity Requiring Review
+
+index=main sourcetype=security_detection_lab event_type="vpn"
+| where location="Unknown" OR device="UNKNOWN-DEVICE"
+| table _time user src_ip device location outcome details
+| sort _time
+
+
+# Dashboard Panel 7: Privileged Group Changes
+
+index=main sourcetype=security_detection_lab
+event_type="account_change"
+| search details="*privileged group*"
+| table _time user src_ip device location outcome details
+
