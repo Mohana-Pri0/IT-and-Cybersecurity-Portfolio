@@ -4,5 +4,5 @@ Practical projects covering Microsoft Azure, Entra ID, users and groups, RBAC, A
 
 ## Projects
 
-- ./Azure-Fundamentals-and-Entra-ID-Administration-Lab/
-- ./Azure-Storage-and-Virtual-Networking-Lab/
+- [Azure-Fundamentals-and-Entra-ID-Administration-Lab](Azure-Fundamentals-and-Entra-ID-Administration-Lab)
+- [Azure-Storage-and-Virtual-Networking-Lab](Azure-Storage-and-Virtual-Networking-Lab)
